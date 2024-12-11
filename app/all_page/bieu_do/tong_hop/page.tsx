@@ -4,6 +4,7 @@ import Header from "./Header";
 import React, { useState } from "react";
 import CompareTwoChart from "@/components/Echarts/tong_hop_tron";
 import BarChart from "@/components/Echarts/tong_hop_cot";
+import BarChartsWater from "@/components/Echarts/tong_hop_cot_nuoc";
 import CompareThreeChart from "@/components/Echarts/Compare_gas";
 import CompareElecChart from "@/components/Echarts/Compare_Elec";
 import CompareWaterChart from "@/components/Echarts/Compare_Water";
@@ -50,9 +51,8 @@ export default function ApSuatPage() {
               onChange={handleDeviceChange}
             >
               <option>Tất cả</option>
-              <option>Điện</option>
-              <option>Nước</option>
-              <option>Gas</option>
+              <option>Đồng hồ đo điện</option>
+              <option>Đồng hồ đo nước</option>
             </select>
           </div>
           <div className="flex flex-col">
@@ -75,24 +75,21 @@ export default function ApSuatPage() {
         {showCharts && chartDevice === "Tất cả" && (
           <CompareTwoChart date={chartDate} />
         )}
-        {showCharts && chartDevice === "Điện" && (
-          <CompareElecChart date={chartDate} />
+        {showCharts && chartDevice === "Đồng hồ đo điện" && (
+          <>
+            <CompareElecChart date={chartDate} />
+            <div className="mt-4 ml-8 mr-8 border rounded-lg">
+              <BarChart date={chartDate} />
+            </div>
+          </>
         )}
-        {showCharts && chartDevice === "Nước" && (
-          <CompareWaterChart date={chartDate} />
-        )}
-        {showCharts && chartDevice === "Gas" && (
-          <CompareThreeChart date={chartDate} />
+        {showCharts && chartDevice === "Đồng hồ đo nước" && (
+          <>
+            <CompareWaterChart date={chartDate} />
+            <BarChartsWater date={chartDate} />
+          </>
         )}
       </div>
-
-      {showCharts && (
-        <div className="mt-4 ml-8 mr-8 border rounded-lg">
-          <h1 className="mt-4">
-            <BarChart date={chartDate} />
-          </h1>
-        </div>
-      )}
     </div>
   );
 }

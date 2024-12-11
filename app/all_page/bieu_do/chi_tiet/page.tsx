@@ -7,7 +7,7 @@ import BarChart from "@/components/Echarts/chi_tiet_cot";
 import { toast } from "sonner";
 
 export default function ApSuatPage() {
-  const [selectedDevice, setSelectedDevice] = useState("Dây chuyền 1");
+  const [selectedDevice, setSelectedDevice] = useState("Đồng hồ điện 1");
   const [selectedTime, setSelectedTime] = useState("2023-01");
   const [showCharts, setShowCharts] = useState(false);
 
@@ -45,9 +45,9 @@ export default function ApSuatPage() {
               value={selectedDevice}
               onChange={handleDeviceChange}
             >
-              <option>Dây chuyền 1</option>
-              <option>Dây chuyền 2</option>
-              <option>Dây chuyền 3</option>
+              <option>Đồng hồ điện 1</option>
+              <option>Đồng hồ điện 2</option>
+              <option>Đồng hồ điện 3</option>
             </select>
           </div>
 

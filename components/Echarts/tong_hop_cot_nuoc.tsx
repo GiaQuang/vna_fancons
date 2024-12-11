@@ -2,7 +2,7 @@
 import { useEffect } from "react";
 import * as echarts from "echarts";
 
-const BarCharts = () => {
+const BarChartsWater = () => {
   useEffect(() => {
     // Lấy phần tử DOM để vẽ biểu đồ
     const chartDom = document.getElementById("main");
@@ -11,7 +11,7 @@ const BarCharts = () => {
     // Cấu hình của biểu đồ
     const option = {
       title: {
-        text: "Biểu đồ tiêu thụ điện ",
+        text: "Biểu đồ tiêu thụ nước ",
         left: "center", // Căn giữa tiêu đề
         textStyle: {
           fontSize: 24, // Kích thước font
@@ -25,7 +25,7 @@ const BarCharts = () => {
           type: "shadow", // Cách hiển thị tooltip khi hover
         },
       },
-      legend: { left: "17%", top: "8%" },
+      legend: { left: "25%", top: "8%" },
       grid: {
         left: "3%",
         right: "4%",
@@ -34,7 +34,7 @@ const BarCharts = () => {
       },
       xAxis: {
         type: "value",
-        name: "kWh",
+        name: "m3",
       },
       yAxis: {
         type: "category",
@@ -75,7 +75,7 @@ const BarCharts = () => {
       color: ["red", "green", "blue"],
       series: [
         {
-          name: "Đồng hồ đo điện 1",
+          name: "Đồng hồ đo nước 9",
           type: "bar",
           stack: "total",
           label: {
@@ -87,7 +87,7 @@ const BarCharts = () => {
           data: [200, 190, 180, 210, 185, 195, 205],
         },
         {
-          name: "Đồng hồ đo điện 2",
+          name: "Đồng hồ đo nước 10",
           type: "bar",
           stack: "total",
           label: {
@@ -99,7 +99,7 @@ const BarCharts = () => {
           data: [320, 332, 310, 343, 335, 350, 340],
         },
         {
-          name: "Đồng hồ đo điện 3",
+          name: "Đồng hồ đo nước 11",
           type: "bar",
           stack: "total",
           label: {
@@ -112,7 +112,7 @@ const BarCharts = () => {
         },
 
         {
-          name: "Đồng hồ đo điện 4",
+          name: "Đồng hồ đo nước 12",
           type: "bar",
           stack: "total",
           label: {
@@ -124,7 +124,7 @@ const BarCharts = () => {
           data: [120, 82, 91, 134, 190, 230, 210],
         },
         {
-          name: "Đồng hồ đo điện 5",
+          name: "Đồng hồ đo nước 13",
           type: "bar",
           stack: "total",
           label: {
@@ -136,31 +136,7 @@ const BarCharts = () => {
           data: [120, 82, 91, 134, 190, 230, 210],
         },
         {
-          name: "Đồng hồ đo điện 6",
-          type: "bar",
-          stack: "total",
-          label: {
-            show: true,
-          },
-          emphasis: {
-            focus: "series",
-          },
-          data: [120, 82, 91, 134, 190, 230, 210],
-        },
-        {
-          name: "Đồng hồ đo điện 7",
-          type: "bar",
-          stack: "total",
-          label: {
-            show: true,
-          },
-          emphasis: {
-            focus: "series",
-          },
-          data: [120, 82, 91, 134, 190, 230, 210],
-        },
-        {
-          name: "Đồng hồ đo điện 8",
+          name: "Đồng hồ đo nước 14",
           type: "bar",
           stack: "total",
           label: {
@@ -190,4 +166,4 @@ const BarCharts = () => {
   );
 };
 
-export default BarCharts;
+export default BarChartsWater;

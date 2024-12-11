@@ -4,7 +4,7 @@ import React, { useState, useMemo } from "react";
 const DevicesTable = () => {
   const initialDevices = [
     {
-      name: "Dây chuyển 1",
+      name: "Đồng hồ đo điện 1",
       type: "Điện",
       setting: {
         warning: "Consumption",
@@ -15,7 +15,7 @@ const DevicesTable = () => {
       },
     },
     {
-      name: "Cảm biến 1",
+      name: "Đồng hồ đo điện 2",
       type: "Điện",
       setting: {
         warning: "Consumption",
@@ -26,7 +26,7 @@ const DevicesTable = () => {
       },
     },
     {
-      name: "Cụm nghiền 1",
+      name: "Đồng hồ đo điện 3",
       type: "Điện",
       setting: {
         warning: "Consumption",
@@ -37,7 +37,7 @@ const DevicesTable = () => {
       },
     },
     {
-      name: "Quạt phân ly 1",
+      name: "Đồng hồ đo điện 4",
       type: "Điện",
       setting: {
         warning: "Consumption",
@@ -48,7 +48,7 @@ const DevicesTable = () => {
       },
     },
     {
-      name: "Quạt phòng 1",
+      name: "Đồng hồ đo điện 5",
       type: "Điện",
       setting: {
         warning: "Consumption",
@@ -59,62 +59,7 @@ const DevicesTable = () => {
       },
     },
     {
-      name: "Tổng",
-      type: "Nước",
-      setting: {
-        warning: "Consumption",
-        thresholds: {
-          warning: 100,
-          critical: 150,
-        },
-      },
-    },
-    {
-      name: "Xưởng 1",
-      type: "Nước",
-      setting: {
-        warning: "Consumption",
-        thresholds: {
-          warning: 100,
-          critical: 150,
-        },
-      },
-    },
-    {
-      name: "Xưởng 2",
-      type: "Nước",
-      setting: {
-        warning: "Consumption",
-        thresholds: {
-          warning: 100,
-          critical: 150,
-        },
-      },
-    },
-    {
-      name: "Dây chuyền A",
-      type: "Nước",
-      setting: {
-        warning: "Consumption",
-        thresholds: {
-          warning: 100,
-          critical: 150,
-        },
-      },
-    },
-    {
-      name: "Dây chuyền B",
-      type: "Nước",
-      setting: {
-        warning: "Consumption",
-        thresholds: {
-          warning: 100,
-          critical: 150,
-        },
-      },
-    },
-    {
-      name: "Quạt phân ly 2",
+      name: "Đồng hồ đo điện 6",
       type: "Điện",
       setting: {
         warning: "Consumption",
@@ -125,7 +70,7 @@ const DevicesTable = () => {
       },
     },
     {
-      name: "Quạt phân ly 3",
+      name: "Đồng hồ đo điện 7",
       type: "Điện",
       setting: {
         warning: "Consumption",
@@ -136,7 +81,18 @@ const DevicesTable = () => {
       },
     },
     {
-      name: "Tổng 2",
+      name: "Đồng hồ đo điện 8",
+      type: "Điện",
+      setting: {
+        warning: "Consumption",
+        thresholds: {
+          warning: 100,
+          critical: 150,
+        },
+      },
+    },
+    {
+      name: "Đồng hồ đo nước 9",
       type: "Nước",
       setting: {
         warning: "Consumption",
@@ -147,7 +103,7 @@ const DevicesTable = () => {
       },
     },
     {
-      name: "Xưởng 3",
+      name: "Đồng hồ đo nước 10",
       type: "Nước",
       setting: {
         warning: "Consumption",
@@ -158,7 +114,40 @@ const DevicesTable = () => {
       },
     },
     {
-      name: "Xưởng 4",
+      name: "Đồng hồ đo nước 11",
+      type: "Nước",
+      setting: {
+        warning: "Consumption",
+        thresholds: {
+          warning: 100,
+          critical: 150,
+        },
+      },
+    },
+    {
+      name: "Đồng hồ đo nước 12",
+      type: "Nước",
+      setting: {
+        warning: "Consumption",
+        thresholds: {
+          warning: 100,
+          critical: 150,
+        },
+      },
+    },
+    {
+      name: "Đồng hồ đo nước 13",
+      type: "Nước",
+      setting: {
+        warning: "Consumption",
+        thresholds: {
+          warning: 100,
+          critical: 150,
+        },
+      },
+    },
+    {
+      name: "Đồng hồ đo nước 14",
       type: "Nước",
       setting: {
         warning: "Consumption",

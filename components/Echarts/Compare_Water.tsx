@@ -10,24 +10,45 @@ const CompareWaterChart = () => {
 
     const data1 = [
       {
-        name: "Device Water 1",
+        name: "Đồng hồ đo nước 9",
         value: 70,
         itemStyle: {
           color: "red",
         },
       },
       {
-        name: "Device Water 2",
+        name: "Đồng hồ đo nước 10",
         value: 50,
         itemStyle: {
           color: "#00FF00",
         },
       },
       {
-        name: "Device Water 3",
+        name: "Đồng hồ đo nước 11",
         value: 30,
         itemStyle: {
           color: "blue",
+        },
+      },
+      {
+        name: "Đồng hồ đo nước 12",
+        value: 40,
+        itemStyle: {
+          color: "orange",
+        },
+      },
+      {
+        name: "Đồng hồ đo nước 13",
+        value: 60,
+        itemStyle: {
+          color: "yellow",
+        },
+      },
+      {
+        name: "Đồng hồ đo nước 14",
+        value: 20,
+        itemStyle: {
+          color: "pink",
         },
       },
     ];
@@ -90,21 +111,21 @@ const CompareWaterChart = () => {
           },
         },
         {
-          text: "Theo lượng điện tiêu thụ",
+          text: "Theo lượng nước tiêu thụ",
           left: "20%",
-          top: "13%",
+          top: "10%",
           textAlign: "center",
         },
         {
           text: "Theo khung giờ",
           left: "50%",
-          top: "13%",
+          top: "10%",
           textAlign: "center",
         },
         {
           text: "NaN",
           left: "80%",
-          top: "13%",
+          top: "10%",
           textAlign: "center",
         },
       ],

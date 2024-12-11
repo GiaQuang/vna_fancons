@@ -37,9 +37,9 @@ const GridLayout = () => {
                 <div className="flex flex-row items-start gap-6">
                   <div className="flex flex-col">
                     <label className="ml-20 mb-2">Chọn Thiết Bị</label>
-                    <select className="ml-20 border rounded-md px-3 py-2 bg-white w-36 mr-0.5">
-                      <option>Dây chuyền 1</option>
-                      <option>Dây chuyền 2</option>
+                    <select className="ml-20 border rounded-md px-3 py-2 bg-white w-44 mr-0.5">
+                      <option>Đồng hồ điện 1</option>
+                      <option>Đồng hồ điện 2</option>
                     </select>
                   </div>
 
@@ -47,7 +47,7 @@ const GridLayout = () => {
                   <div className="flex flex-col">
                     <label className="ml-5 mb-2">Tiêu Chí So Sánh</label>
                     <select
-                      className="ml-5 border rounded-md px-3 py-2 bg-white w-36"
+                      className="ml-5 border rounded-md px-3 py-2 bg-white w-44"
                       value={criteria}
                       onChange={handleCriteriaChange}
                     >
@@ -61,13 +61,13 @@ const GridLayout = () => {
                 {/* So sánh theo Năm */}
                 <div className="flex items-center gap-4">
                   <span className="w-16">Năm</span>
-                  <select className="border rounded-md px-3 py-2 bg-white w-36">
+                  <select className="border rounded-md px-3 py-2 bg-white w-44">
                     {[2021, 2022, 2023].map((year) => (
                       <option key={year}>{year}</option>
                     ))}
                   </select>
                   <span className="italic opacity-70">vs</span>
-                  <select className="border rounded-md px-3 py-2 bg-white w-36">
+                  <select className="border rounded-md px-3 py-2 bg-white w-44">
                     {[2021, 2022, 2023].map((year) => (
                       <option key={year}>{year}</option>
                     ))}
@@ -78,7 +78,7 @@ const GridLayout = () => {
                 <div className="flex items-center gap-4">
                   <span className="w-16">Tháng</span>
                   <select
-                    className={`border rounded-md px-3 py-2 bg-white w-36 ${
+                    className={`border rounded-md px-3 py-2 bg-white w-44 ${
                       criteria === "Theo Năm"
                         ? "opacity-30 cursor-not-allowed"
                         : ""
@@ -91,7 +91,7 @@ const GridLayout = () => {
                   </select>
                   <span className="italic opacity-70">vs</span>
                   <select
-                    className={`border rounded-md px-3 py-2 bg-white w-36 ${
+                    className={`border rounded-md px-3 py-2 bg-white w-44 ${
                       criteria === "Theo Năm"
                         ? "opacity-30 cursor-not-allowed"
                         : ""
@@ -108,7 +108,7 @@ const GridLayout = () => {
                 <div className="flex items-center gap-4">
                   <span className="w-16">Ngày</span>
                   <select
-                    className={`border rounded-md px-3 py-2 bg-white w-36 ${
+                    className={`border rounded-md px-3 py-2 bg-white w-44 ${
                       criteria !== "Theo Ngày"
                         ? "opacity-30 cursor-not-allowed"
                         : ""
@@ -121,7 +121,7 @@ const GridLayout = () => {
                   </select>
                   <span className="italic opacity-70">vs</span>
                   <select
-                    className={`border rounded-md px-3 py-2 bg-white w-36 ${
+                    className={`border rounded-md px-3 py-2 bg-white w-44 ${
                       criteria !== "Theo Ngày"
                         ? "opacity-30 cursor-not-allowed"
                         : ""

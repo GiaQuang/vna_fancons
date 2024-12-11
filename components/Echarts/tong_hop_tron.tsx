@@ -23,13 +23,6 @@ const CompareThreeChart = () => {
           color: "#00FF00",
         },
       },
-      {
-        name: "Gas",
-        value: 30,
-        itemStyle: {
-          color: "blue",
-        },
-      },
     ];
     const data2 = [
       {

@@ -10,21 +10,56 @@ const CompareElecChart = () => {
 
     const data1 = [
       {
-        name: "Device Electricity 1",
+        name: "Đồng hồ đo điện 1",
         value: 70,
         itemStyle: {
           color: "red",
         },
       },
       {
-        name: "Device Electricity 2",
+        name: "Đồng hồ đo điện 2",
         value: 50,
         itemStyle: {
           color: "#00FF00",
         },
       },
       {
-        name: "Device Electricity 3",
+        name: "Đồng hồ đo điện 3",
+        value: 30,
+        itemStyle: {
+          color: "blue",
+        },
+      },
+      {
+        name: "Đồng hồ đo điện 4",
+        value: 30,
+        itemStyle: {
+          color: "orange",
+        },
+      },
+      {
+        name: "Đồng hồ đo điện 5",
+        value: 30,
+        itemStyle: {
+          color: "yellow",
+        },
+      },
+      {
+        name: "Đồng hồ đo điện 6",
+        value: 30,
+        itemStyle: {
+          color: "purple",
+        },
+      },
+      {
+        name: "Đồng hồ đo điện 7",
+        value: 30,
+        itemStyle: {
+          color: "gray",
+        },
+      },
+      {
+        name: "Đồng hồ đo điện 8",
         value: 30,
         itemStyle: {
           color: "blue",
