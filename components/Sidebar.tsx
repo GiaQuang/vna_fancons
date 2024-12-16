@@ -26,10 +26,10 @@ export default function Sidebar() {
       <div className="grow">
         <div className="p-4">
           {/* TỔNG QUAN */}
-          <Link href="/all_page/trang_chu">
+          <Link href="/all_page/tong_quan">
             <div
               className={`font-bold cursor-pointer mt-4 ${
-                path === "/all_page/trang_chu" ? "opacity-100" : "opacity-50"
+                path === "/all_page/tong_quan" ? "opacity-100" : "opacity-50"
               }`}
             >
               <span className="flex items-center">

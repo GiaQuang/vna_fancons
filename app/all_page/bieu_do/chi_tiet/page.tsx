@@ -74,7 +74,7 @@ export default function ApSuatPage() {
           <>
             <EChartsComponent device={selectedDevice} time={selectedTime} />
 
-            <div className="mt-2 border rounded-lg">
+            <div className="mt-2 border rounded-lg ">
               <BarChart device={selectedDevice} time={selectedTime} />
             </div>
           </>

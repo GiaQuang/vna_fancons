@@ -18,7 +18,7 @@ const EChartsComponent = () => {
           //subtext: "Fake Data",
           left: "center",
           textStyle: {
-            fontSize: 18, // Kích thước font
+            fontSize: 23, // Kích thước font
             fontWeight: "bold", // Độ đậm font
             fontFamily: "Arial, sans-serif", // Chọn font chữ
           },
@@ -29,14 +29,14 @@ const EChartsComponent = () => {
         color: ["red", "#33FF57", "blue"],
         legend: {
           orient: "vertical",
-          left: "25%",
-          top: "15%",
+          left: "80%",
+          top: "70%",
         },
         series: [
           {
             name: "Access From",
             type: "pie",
-            radius: "50%",
+            radius: "70%",
             data: [
               { value: 24.3, name: "Giờ cao điểm" },
               { value: 59.5, name: "Giờ bình thường" },
@@ -55,7 +55,6 @@ const EChartsComponent = () => {
 
       myChart.setOption(option);
 
-      // Đảm bảo giải phóng tài nguyên khi component bị unmount
       return () => {
         myChart.dispose();
       };
@@ -63,10 +62,42 @@ const EChartsComponent = () => {
   }, []);
 
   return (
-    <div
-      ref={chartRef}
-      className="w-full h-64 sm:h-96 bg-white shadow-lg rounded-md"
-    />
+    <div className="flex flex-col sm:flex-row items-center sm:items-start">
+      {/* Container nội dung bên phải */}
+      <div className="w-full sm:w-1/2 px-4 mt-4 sm:mt-0 sm:ml-4 sm:h-96 bg-gray-100 shadow-lg rounded-md mr-4">
+        <h3 className="text-2xl font-bold text-center mb-4 mt-2">
+          Thông tin chi tiết
+        </h3>
+        <ul className="text-xl space-y-2 font-bold ml-4">
+          <li>
+            <span className="">Giá trị điện áp trung bình: 236V</span>{" "}
+          </li>
+          <li>
+            <span>Giá trị dòng điện trung bình: 0.035A</span>{" "}
+          </li>
+          <li>
+            <span>Tổng công suất tiêu thụ: 68.1W</span>{" "}
+          </li>
+          <li>
+            <span>Tổng công suất phản kháng: 22.75VAr</span>{" "}
+          </li>
+          <li>
+            <span>Tổng công suất biểu kiến: 79VA</span>{" "}
+          </li>
+          <li>
+            <span>Tần số dòng điện: 50Hz</span>
+          </li>
+          <li>
+            <span>Tổng điện năng tiêu thụ: 92736.8Wh</span>{" "}
+          </li>
+        </ul>
+      </div>
+      {/* Container biểu đồ */}
+      <div
+        ref={chartRef}
+        className="w-full sm:w-2/3 mr-4 h-64 sm:h-96 bg-gray-100 shadow-lg rounded-md "
+      />
+    </div>
   );
 };
 

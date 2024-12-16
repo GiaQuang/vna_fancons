@@ -16,7 +16,12 @@ const INITIAL_SETTINGS = {
   highEnergy: 3000,
 };
 
-const DEVICE_OPTIONS = ["Đồng hồ điện 1", "Đồng hồ điện 2", "Đồng hồ điện 3"];
+const DEVICE_OPTIONS = [
+  "Đồng hồ điện 1",
+  "Đồng hồ điện 2",
+  "Đồng hồ điện 3",
+  "Đồng hồ nước",
+];
 
 const formatNumber = (number) => {
   return new Intl.NumberFormat("de-DE", {
