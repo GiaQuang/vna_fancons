@@ -166,7 +166,7 @@ const DevicesTable = () => {
   const [selectedDevice, setSelectedDevice] = useState(null);
   const [modalType, setModalType] = useState(null);
 
-  const itemsPerPage = 10;
+  const itemsPerPage = 14;
 
   // Memoized filtered devices to improve performance
   const filteredDevices = useMemo(() => {
@@ -290,8 +290,8 @@ const DevicesTable = () => {
       <table className="w-full">
         <thead>
           <tr className="bg-gray-200 text-gray-700 font-bold">
-            <th className="py-3 px-8 text-left w-3/5">Thiết bị</th>
-            <th className="py-3 px-4 text-left w-1/5 relative">
+            <th className="py-1 px-8 text-left w-3/5">Thiết bị</th>
+            <th className="py-1 px-4 text-left w-1/5 relative">
               <div className="flex items-center gap-2">
                 Phân loại
                 <div className="relative">
@@ -326,21 +326,21 @@ const DevicesTable = () => {
                 </div>
               </div>
             </th>
-            <th className="py-3 px-4 text-center w-1/5">Cài đặt</th>
+            <th className="py-1 px-4 text-center w-1/5">Cài đặt</th>
           </tr>
         </thead>
         <tbody>
           {paginationInfo.currentPageDevices.map((device, index) => (
             <tr key={index} className="border-b border-gray-200">
-              <td className="py-3 px-8">{device.name}</td>
+              <td className="py-1 px-8">{device.name}</td>
               <td
-                className={`py-3 px-4 ${
+                className={`py-1 px-4 ${
                   device.type === "Điện" ? "text-orange-500" : "text-blue-500"
                 }`}
               >
                 {device.type}
               </td>
-              <td className="py-3 px-4 text-right">
+              <td className="py-1 px-4 text-right">
                 <div className="flex gap-2 justify-end">
                   <button
                     onClick={() => openModal(device, "warning")}

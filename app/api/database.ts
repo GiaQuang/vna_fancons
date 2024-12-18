@@ -25,7 +25,7 @@ export const data: dataType[] = [
   },
   {
     name: "Đồng hồ đo điện 2",
-    address: 1,
+    address: 2,
     Vavg: 234,
     Iavg: 10,
     TotalW: 2000,
@@ -36,7 +36,7 @@ export const data: dataType[] = [
   },
   {
     name: "Đồng hồ đo điện 3",
-    address: 1,
+    address: 3,
     Vavg: 236,
     Iavg: 10,
     TotalW: 2000,
@@ -47,7 +47,7 @@ export const data: dataType[] = [
   },
   {
     name: "Đồng hồ đo điện 4",
-    address: 1,
+    address: 4,
     Vavg: 236.04,
     Iavg: 10,
     TotalW: 2000,
@@ -58,7 +58,7 @@ export const data: dataType[] = [
   },
   {
     name: "Đồng hồ đo điện 5",
-    address: 1,
+    address: 5,
     Vavg: 234.11,
     Iavg: 10,
     TotalW: 2000,
@@ -69,7 +69,7 @@ export const data: dataType[] = [
   },
   {
     name: "Đồng hồ đo điện 6",
-    address: 1,
+    address: 6,
     Vavg: 235,
     Iavg: 10,
     TotalW: 2000,
@@ -80,7 +80,7 @@ export const data: dataType[] = [
   },
   {
     name: "Đồng hồ đo điện 7",
-    address: 1,
+    address: 7,
     Vavg: 236,
     Iavg: 10,
     TotalW: 2000,
@@ -91,7 +91,7 @@ export const data: dataType[] = [
   },
   {
     name: "Đồng hồ đo điện 8",
-    address: 1,
+    address: 8,
     Vavg: 234,
     Iavg: 10,
     TotalW: 2000,
@@ -103,32 +103,32 @@ export const data: dataType[] = [
 
   {
     name: "Đồng hồ đo nước 9",
-    address: 1,
+    address: 9,
     TotalWater: 999,
   },
   {
     name: "Đồng hồ đo nước 10",
-    address: 1,
+    address: 10,
     TotalWater: 0,
   },
   {
     name: "Đồng hồ đo nước 11",
-    address: 1,
+    address: 11,
     TotalWater: 0,
   },
   {
     name: "Đồng hồ đo nước 12",
-    address: 1,
+    address: 12,
     TotalWater: 0,
   },
   {
     name: "Đồng hồ đo nước 13",
-    address: 1,
+    address: 13,
     TotalWater: 4.7,
   },
   {
     name: "Đồng hồ đo nước 14",
-    address: 1,
+    address: 14,
     TotalWater: 4.5,
   },
 ];
